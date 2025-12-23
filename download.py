@@ -20,4 +20,4 @@ for catalogue in data["catalogue"]:
         urllib.request.urlretrieve(f"{base_url}/{texture_path}/{catalogue['name']}/{file}", f"textures/{catalogue['name']}/{file}")
 
 with open("version.txt", "w", encoding="utf-8") as f:
-    f.write(data["info"]["version"])
+    f.write(str(data["info"]["version"]))
